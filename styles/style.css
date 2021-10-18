@@ -225,3 +225,214 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.wrapper {
+  max-width: 1600px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 125%;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Sahitya", serif;
+}
+
+h1,
+h2 {
+  font-family: "Fredoka One", cursive;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.top-nav li {
+  font-weight: 700;
+}
+
+.header-text p {
+  font-size: 3rem;
+}
+
+h2 {
+  color: #4D194D;
+  font-size: 2rem;
+}
+
+.about,
+.contact-text {
+  line-height: 2;
+}
+
+.emphasis {
+  color: #D67AB1;
+  font-weight: 500;
+}
+
+.email {
+  color: #FDF7FA;
+}
+
+header {
+  background-image: url(../assets/header-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 2rem;
+}
+header .top-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header .top-nav a {
+  text-decoration: none;
+  color: #4D194D;
+}
+header .header-text {
+  padding-top: 10%;
+}
+header .header-text p {
+  color: #4D194D;
+}
+header .header-text p .underline {
+  text-decoration: underline;
+}
+header .header-text h1 {
+  color: #FDF7FA;
+}
+header .header-text h1 .web-developer {
+  display: block;
+}
+
+.about {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 10%;
+}
+.about .about-text {
+  width: 70%;
+}
+.about .about-text .emphasis {
+  color: #D67AB1;
+}
+.about img {
+  width: 80%;
+  padding-top: 30%;
+}
+
+.skills {
+  padding-top: 5rem;
+}
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  gap: 10%;
+}
+.skills ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+}
+
+.contact-section {
+  padding-top: 3rem;
+  background-color: #7979E3;
+  padding-bottom: 1rem;
+}
+.contact-section .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+}
+.contact-section .contact .contact-text {
+  width: 40%;
+}
+.contact-section form {
+  border: 3px solid #D67AB1;
+  border-radius: 30px;
+}
+
+input {
+  border: 1px solid #E2A3C7;
+  border-radius: 10px;
+  width: 40%;
+  height: 50px;
+  margin: 2% auto;
+  background-color: #E2A3C7;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid #E2A3C7;
+  border-radius: 10px;
+  width: 90%;
+  height: 300px;
+  margin: auto;
+  background-color: #E2A3C7;
+}
+
+form button {
+  width: 20%;
+  border: 0;
+  border-radius: 20px;
+  height: 50px;
+  margin: 2% auto;
+  background-color: #E2A3C7;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #FDF7FA;
+}
+
+footer {
+  text-align: center;
+  background-color: #E2A3C7;
+  padding: 10px;
+}

@@ -1,0 +1,19 @@
+.about {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+
+    .about-text {
+        width: 70%;
+
+        .emphasis {
+            color: $pink;
+        }
+    }
+
+    img {
+        width: 80%;
+        padding-top: 30%;
+    }
+}

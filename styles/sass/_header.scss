@@ -1,0 +1,41 @@
+header {
+    background-image: url(../assets/header-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 2rem;
+
+    .top-nav {
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: $violet;
+        }
+    }
+
+    .header-text {
+        padding-top: 10%;
+
+        p {
+            color: $violet;
+
+            .underline {
+                text-decoration: underline;
+            }
+        }
+
+        h1 {
+            color: $off-white;
+
+            .web-developer {
+                display: block;
+            }
+        }
+    }   
+}

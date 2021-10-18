@@ -1,0 +1,40 @@
+body {
+    font-family: $primary-font;
+}
+
+h1, 
+h2 {
+    font-family: $secondary-font;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.top-nav li {
+    font-weight: 700;
+}
+
+.header-text p {
+    font-size: 3rem;
+}
+
+h2 {
+    color: $violet;
+    font-size: 2rem;
+}
+
+.about,
+.contact-text {
+    line-height: 2;
+}
+
+.emphasis {
+    color: $pink;
+    font-weight: 500;
+}
+
+.email {
+    color: $off-white;
+}
+
