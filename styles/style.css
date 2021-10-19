@@ -246,7 +246,26 @@ li {
   list-style: none;
 }
 
-body {
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  font-family: "Sahitya", serif;
+}
+
+form input::-moz-placeholder, form textarea::-moz-placeholder {
+  font-family: "Sahitya", serif;
+}
+
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  font-family: "Sahitya", serif;
+}
+
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
+  font-family: "Sahitya", serif;
+}
+
+body,
+button,
+form input::placeholder,
+form textarea::placeholder {
   font-family: "Sahitya", serif;
 }
 
@@ -344,6 +363,10 @@ header .header-text h1 .web-developer {
 
 .skills {
   padding-top: 5rem;
+  background-image: url("../assets/white-background.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .skills ul {
   display: -webkit-box;
@@ -375,60 +398,74 @@ header .header-text h1 .web-developer {
 .contact-section {
   padding-top: 3rem;
   background-color: #7979E3;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 .contact-section .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10%;
+  gap: 5%;
 }
 .contact-section .contact .contact-text {
-  width: 40%;
+  width: 60%;
+}
+.contact-section .contact .contact-text h2 {
+  margin: 0 auto;
+  padding-top: -1rem;
 }
 .contact-section form {
-  border: 3px solid #D67AB1;
-  border-radius: 30px;
+  height: 18rem;
+  padding-top: 1rem;
+}
+.contact-section .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3%;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+input,
+textarea,
+form button {
+  background-color: #FDF7FA;
+  border: 3px solid #E2A3C7;
 }
 
 input {
-  border: 1px solid #E2A3C7;
   border-radius: 10px;
-  width: 40%;
-  height: 50px;
+  width: 45%;
+  height: 2rem;
   margin: 2% auto;
-  background-color: #E2A3C7;
+  padding: 10px;
 }
 
 textarea {
   resize: none;
-  border: 1px solid #E2A3C7;
   border-radius: 10px;
-  width: 90%;
-  height: 300px;
+  width: 95%;
+  height: 12rem;
   margin: auto;
-  background-color: #E2A3C7;
+  padding: 10px;
 }
 
 form button {
   width: 20%;
-  border: 0;
-  border-radius: 20px;
-  height: 50px;
+  border-radius: 10px;
+  height: 30px;
   margin: 2% auto;
-  background-color: #E2A3C7;
 }
 
 form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #FDF7FA;
 }
 
 footer {

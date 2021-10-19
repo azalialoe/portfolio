@@ -1,4 +1,7 @@
-body {
+body,
+button,
+form input::placeholder,
+form textarea::placeholder {
     font-family: $primary-font;
 }
 

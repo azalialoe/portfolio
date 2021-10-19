@@ -1,19 +1,31 @@
 .contact-section {
     padding-top: 3rem;
     background-color: $blue;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 
     .contact {
         display: flex;
-        gap: 10%;
+        gap: 5%;
 
         .contact-text {
-            width: 40%;
+            width: 60%;
+
+            h2 {
+                margin: 0 auto;
+                padding-top: -1rem;
+            }
         }
     }
 
     form {
-        border: 3px solid $pink;
-        border-radius: 30px;
+        height: 18rem;
+        padding-top: 1rem;
+    }
+
+    .socialLinks {
+        display: flex;
+        gap: 3%;
+        margin-top: 0;
+        padding-left: 0;
     }
 }
