@@ -368,6 +368,9 @@ header .header-text h1 .web-developer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.skills h2 {
+  text-align: center;
+}
 .skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,6 +396,84 @@ header .header-text h1 .web-developer {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 2rem;
+}
+
+.projects {
+  padding-bottom: 2%;
+}
+.projects h2,
+.projects h3,
+.projects p {
+  text-align: center;
+}
+.projects .projects-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.projects .projects-img h3,
+.projects .projects-img p,
+.projects .projects-img p a,
+.projects .projects-img i {
+  color: #FDF7FA;
+}
+.projects .projects-img .imgContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2%;
+}
+.projects .projects-img .imgContainer img {
+  width: 40%;
+}
+.projects .projects-img .imgContainer .overlay {
+  position: absolute;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.8);
+  /* Black see-through */
+  height: 100%;
+  padding: 0.8rem;
+  opacity: 0;
+  display: none;
+}
+.projects .projects-img .imgContainer .toolsUsed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.projects .projects-img .imgContainer .toolsUsed li {
+  background-color: #7979E3;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+}
+.projects .projects-img .imgContainer .viewProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.projects .projects-img .imgContainer .viewProjects button {
+  border-radius: 5px;
+  padding: 3px;
+  background-color: #E2A3C7;
+}
+.projects .projects-img .imgContainer .viewProjects button a {
+  text-decoration: none;
+}
+.projects .projects-img .active {
+  opacity: 1;
+  display: block;
 }
 
 .contact-section {
