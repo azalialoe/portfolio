@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sahitya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://kit.fontawesome.com/5ffbbbe9fc.js" crossorigin="anonymous"></script>
     <title>Azalia Loeciano - Front End Developer</title>
 </head>
 <body>
     <header>
+        <!-- navigation -->
         <div class="wrapper top-nav">
             <nav>
                 <ul class="nav">
@@ -24,16 +25,18 @@
             </nav>
         </div>
         
-
+        <!-- header text -->
         <div class="wrapper header-text">
-            <p>Hello, I am <span class="underline">Azalia</span></p>
+            <h2>Hello, I am <span class="underline">Azalia</span></h2>
             <h1>Front-End <span class="web-developer">Web Developer</span></h1>
         </div>
 
     </header>
 
     <main>
-        <section class="wrapper about">
+
+        <!-- about section -->
+        <section class="wrapper about" id="about">
                 <div class="about-text">
                     <h2>about me!</h2>
                     <p>Oh, hello there! My name is Azalia Loeciano. I am a <span class ="emphasis">Front-End Developer</span> based in Toronto, Canada.</p>
@@ -49,7 +52,8 @@
                 <div class="profilePic"><img src="./assets/profile-pic (1).png" alt="profile picture of azalia loeciano"></div>
         </section>
 
-        <section class="skills">
+        <!-- skills section -->
+        <section class="skills" id="skills">
             <div class="wrapper">
                 <h2>my skills and toolkit</h2>
                 <ul>
@@ -114,15 +118,14 @@
             
         </section>
 
-        <section class="wrapper projects">
+        <!-- projects section -->
+        <section class="wrapper projects" id="projects">
             <h2>some of my projects</h2>
-            <p>(click on the picture to learn more!)</p>
 
             <div class="projects-img">
-                <div class="imgContainer projectOne">
+                <div class="imgContainer">
                     <img src="./assets/projects/battle-rockets.gif" alt="a GIF of live website of battle rockets">
-                    <div class="overlay overlayOne">
-                        <i class="fas fa-times"></i>
+                    <div class="overlay">
                         <h3>Battle Rockets</h3>
                         <p>A two players battleship game. Created in collaboration with <a href="https://github.com/maximbelo" target="_blank">Maxim Belo</a> and <a href="https://github.com/scwchen" target="_blank">Steven Chen</a>.</p>
                         <ul class = "toolsUsed">
@@ -137,10 +140,9 @@
                     </div>
                 </div>
 
-                <div class="imgContainer projectTwo">
+                <div class="imgContainer">
                     <img src="./assets/projects/pocket-books.gif" alt="a GIF of live website of pocket books">
-                    <div class="overlay overlayTwo">
-                        <i class="fas fa-times"></i>
+                    <div class="overlay">
                         <h3>Pocket Books</h3>
                         <p>An app that gives users book recommendation based on selected genre. Utilizes OpenLibrary API. Made with <a href="https://github.com/WinterisCoding" target="_blank">Elisabeth Winter</a>.</p>
                         <ul class = "toolsUsed">
@@ -155,10 +157,9 @@
                     </div>
                 </div>
 
-                <div class="imgContainer projectThree">
+                <div class="imgContainer">
                     <img src="./assets/projects/stress-ball.gif" alt="a GIF of live website of stress ball">
-                    <div class="overlay overlayThree">
-                        <i class="fas fa-times"></i>
+                    <div class="overlay">
                         <h3>Virtual Stress Ball</h3>
                         <p>An app that lets users click their stress away. Utilizes icanhazdadjoke API.</p>
                         <ul class = "toolsUsed">
@@ -173,10 +174,9 @@
                     </div>
                 </div>
                 
-                <div class="imgContainer projectFour">
-                    <img src="./assets/projects/planted.gif" alt="a GIF of live website of planted">
+                <div class="imgContainer">
+                    <img src="./assets/projects/planted.gif" alt="a GIF of live website of planted"> 
                     <div class="overlay overlayFour">
-                        <i class="fas fa-times"></i>
                         <h3>Planted</h3>
                         <p>A responsive, multi-page PSD conversion website.</p>
                         <ul class = "toolsUsed">
@@ -185,24 +185,26 @@
                             <li>Vanilla JS</li>
                         </ul>
                         <ul class="viewProjects">
-                            <button><a href="https://azalialoe.github.io/azalia-loeciano-project-one/">Live Site</a></button>
+                            <button><a href="https://azalialoe.github.io/azalia-loeciano-project-one/" target="_blank">Live Site</a></button>
                             <button><a href="https://github.com/azalialoe/azalia-loeciano-project-one" target="_blank">Git Repo</a></button>
                         </ul>
                         
                     </div>
-                </div>
-                
-            </div>
-            
+                </div>              
+            </div>          
         </section>
 
-        <section class="contact-section">
+        <!-- contact section -->
+        <section class="contact-section" id="contact">
             <div class="wrapper contact">
                 <div class="contact-text">
                     <h2>my contact</h2>
-                    <p>Do you want to cry over Toronto sports teams with me? Or see how random I can be? Or maybe you just want to do a virtual hang out with me? You can contact me through the form and follow (or just lurk, that's cool too) my social media links. If you want to slide straight to my inbox, you can send an e-mail to <span class="email">azalia.loeciano@gmail.com</span> 😊</p>
+                    <p>Do you want to cry over Toronto sports teams with me? Or maybe you just want to do a virtual hang out with me? You can contact me through the form and follow (or just lurk, that's cool too) my social media links.</p>
+                
+                    </p>I also have a <a href="https://calendly.com/azalialoeciano" target="_blank">Calendly</a> if you want to straight up book a meeting with me. Ooorrr, if you want to slide straight to my inbox, you can send an e-mail to <span class="email">azalia.loeciano@gmail.com</span> 😊</p>
                 </div>
-    
+
+                <!-- contact form -->
                 <form action="https://formspree.io/f/xeqvdnro" method="POST" class="messageForm wrapper"  name="messageForm">
                     <label for="name" class="sr-only">Name</label>
                     <input type="text" name="name" id="name" placeholder="name" required>
@@ -213,20 +215,23 @@
                     <button type="submit">Send</button>
                 </form>
             </div>
-            
+
+            <!-- social media links -->
             <div class="wrapper socials">
                 <ul class="socialLinks">
-                    <li><a href="https://github.com/azalialoe"><img src="./assets/socials-icons/6214513_github_logo_icon.png" alt="github logo icon"></a></li>
-                    <li><a href="https://www.linkedin.com/in/azalialoeciano/"><img src="./assets/socials-icons/1727490_linkedin_social media_job_network_icon.png" alt="linkedin logo icon"></a></li>
-                    <li><a href="https://twitter.com/AzaliaLoeciano"><img src="./assets/socials-icons/1543317_social media_network_twitter_icon (1).png" alt="twitter logo icon"></a></li>
-                    <li><a href="https://medium.com/@azalia.loeciano"><img src="./assets/socials-icons/7676402_medium_new_icon.png" alt="medium logo icon"></a></li>
+                    <li><a href="https://github.com/azalialoe" target="_blank"><img src="./assets/socials-icons/6214513_github_logo_icon.png" alt="github logo icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/azalialoeciano/" target="_blank"><img src="./assets/socials-icons/1727490_linkedin_social media_job_network_icon.png" alt="linkedin logo icon"></a></li>
+                    <li><a href="https://twitter.com/AzaliaLoeciano" target="_blank"><img src="./assets/socials-icons/1543317_social media_network_twitter_icon (1).png" alt="twitter logo icon"></a></li>
+                    <li><a href="https://medium.com/@azalia.loeciano" target="_blank"><img src="./assets/socials-icons/7676402_medium_new_icon.png" alt="medium logo icon"></a></li>
                 </ul>
             </div>
         </section>
     </main>
     
 
-    <footer>💟 Developed by Azalia Loeciano © 2021. Fueled by tons of H2O and copious amount of cuddles from <a href="https://twitter.com/AzaliaLoeciano/status/1442189026174373893?s=20">Momo</a> 💟</footer>
+    <footer> 
+        <p>💟 Developed by Azalia Loeciano © 2021. Fueled by tons of H2O and copious amount of cuddles from <a href="https://twitter.com/AzaliaLoeciano/status/1442189026174373893?s=20" target="_blank">Momo</a> 💟</p>
+    </footer>
 
     <script src="./script.js"> </script>
 </body>
