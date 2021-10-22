@@ -1,52 +1,67 @@
 header {
     background-image: url(../assets/header-background.png);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
     padding-top: 2rem;
 
     .top-nav {
-        height: 20vh;
+        height: 10vh;
+
+        button {
+            background-color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 10px;
+            position: absolute;
+            right: 1rem;
+            top: 2rem;
+            display: none;
+        }
         
         ul {
             display: flex;
             justify-content: flex-start;
             gap: 7%;
+            padding-left: 0;
+
 
             li {
-                font-size: 1.8rem;
-                
+                font-size: 1.8rem;             
             }
         }
 
 
         a {  
-            color: $violet;
+            color: $blue;
         }
 
         a:hover {
             color: #E9FF70;
             text-decoration-style: wavy;
         }
+
+        a:focus {
+            border: 3px dashed $violet ;
+        }
     }
 
     .header-text {
-        padding-top: 10%;
+        display: flex;
+        flex-direction: column;
 
         h2 {
-            color: #0AEFFF;
+            color: $violet;
             font-family: $primary-font;
             font-size: 2.8rem;
         }
 
         h1 {
-            color: #E9FF70;
+            color: $blue;
             margin-top: 0;
 
             .web-developer {
                 display: block;
             }
         }
-    }   
+    }  
+    
 }

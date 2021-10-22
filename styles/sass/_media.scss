@@ -1,0 +1,133 @@
+@media (max-width: 1120px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    header .top-nav {
+        height: 10vh;
+    }
+   
+
+    .about {
+        gap: 0;
+        flex-wrap: wrap-reverse;
+        padding-top: 0;
+    }
+
+    .about .about-text {
+        width: 100%;
+    }
+
+    .contact-section .contact {
+        gap: 2%;
+    }
+
+    .contact-section .contact .contact-text {
+        width: 100%;
+    }
+
+    .contact-section form {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 810px) {
+
+    header .top-nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: $off-white;
+        border-radius: 30px;
+        border: 2px solid $violet;
+        opacity: 0.9;
+        text-transform: capitalize;
+    }
+
+    header .top-nav ul.active {
+        display: flex;
+    }
+
+    header .top-nav {
+        width: 85%;
+    }
+
+    header .top-nav a:hover {
+        color: $violet;
+    }
+
+    header .top-nav ul li {
+        padding: 1.5rem;
+    }
+
+    header .top-nav button {
+        display: block;
+    }
+
+    header .header-text {
+        margin-top: -2rem;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .skills ul {
+        width: 90%;
+        padding-left: 0;
+    }
+
+    .projects .projects-img .imgContainer {
+        width: 70%;
+    }
+
+    .projects .projects-img .imgContainer .overlay {
+        padding: 2rem;
+    }
+
+    .contact-section .contact {
+        flex-direction: column;
+    }
+
+    .contact-section .contact .contact-text {
+        width: 100%;
+    }
+
+    .contact-section form {
+        padding-top: 0;
+    }
+
+    .contact-section .contact .contact-text h2 {
+        text-align: center;
+    }
+
+    .contact-section {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 428px) {
+
+    header .header-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    header .header-text h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .projects .projects-img .imgContainer {
+        width: 100%;
+    }
+
+    .projects .projects-img .imgContainer .overlay {
+        padding: 0;
+    }
+
+    .projects .projects-img .imgContainer .toolsUsed,
+    .projects .projects-img .imgContainer .viewProjects {
+        padding-left: 0;
+    }
+}

@@ -1,3 +1,22 @@
+.topButton {
+    position: fixed;
+    right: 30px;
+    border: none;
+    bottom: 20px;
+    background-color: rgba(0,0,0,0);
+    z-index: 99;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: 1s all ease-in-out;
+}
+
+.topButtonShow {
+    opacity: 1;
+    transform: translate(0px);
+}
+
+
 .about {
     padding-top: 3rem;
     display: flex;
@@ -7,6 +26,10 @@
     .about-text {
         width: 70%;
 
+        a:focus {
+            border: 3px dashed $violet ;
+        }
+        
         .emphasis {
             color: $blue;
         }

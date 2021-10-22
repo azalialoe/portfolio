@@ -36,5 +36,9 @@
         gap: 3%;
         margin-top: 0;
         padding-left: 0;
+
+        a:focus {
+            outline: 5px dashed $light-pink;
+        }
     }
 }

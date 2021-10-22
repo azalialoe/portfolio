@@ -73,12 +73,18 @@
                     a {
                         text-decoration: none;
                     }
+
+                    a:focus .overlay {
+                        outline: 3px dashed $violet;
+                        opacity: 1;
+                    }
                     
                 }
             }
         }
 
-        .imgContainer:hover .overlay {
+        .imgContainer:hover .overlay,
+        .imgContainer:focus .overlay {
             opacity: 1;
             height: 100%;
         }

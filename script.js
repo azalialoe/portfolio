@@ -1,28 +1,47 @@
-const projectOne = document.querySelector('.projectOne');
-const projectTwo = document.querySelector('.projectTwo');
-const projectThree = document.querySelector('.projectThree');
-const projectFour = document.querySelector('.projectFour');
+const portfolio = {};
 
-const overlayOne = document.querySelector('.overlayOne')
-const overlayTwo = document.querySelector('.overlayTwo')
-const overlayThree = document.querySelector('.overlayThree')
-const overlayFour = document.querySelector('.overlayFour')
+portfolio.init = () => {
+    portfolio.topButton.addEventListener('click', portfolio.scrollTop)
+    portfolio.observer = new IntersectionObserver(portfolio.showButton);
+    portfolio.observer.observe(portfolio.target);
+    portfolio.openButton.addEventListener('click', () => {
+        portfolio.navBar.classList.toggle('active')
+    })
+    
+}
 
-projectOne.addEventListener('click', () => {
-    overlayOne.classList.toggle('active')
-})
-
-projectTwo.addEventListener('click', () => {
-    overlayTwo.classList.toggle('active')
-})
-
-projectThree.addEventListener('click', () => {
-    overlayThree.classList.toggle('active')
-})
-
-projectFour.addEventListener('click', () => {
-    overlayFour.classList.toggle('active')
-})
+portfolio.topButton = document.getElementById('topButton');
+portfolio.rootElement = document.documentElement;
+portfolio.target = document.querySelector('.projects');
+portfolio.openButton = document.getElementById('openButton');
+console.log(portfolio.openButton);
+portfolio.navBar = document.querySelector('header .top-nav ul');
+console.log(portfolio.navBar);
 
 
 
+
+
+// function to display top button
+portfolio.showButton = (entries) => {   
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            portfolio.topButton.classList.add('topButtonShow') 
+        } else {
+            portfolio.topButton.classList.remove('topButtonShow')
+        }
+    })
+}
+
+// function to bring page back to top
+portfolio.scrollTop = () => {
+
+    portfolio.rootElement.scrollTo({
+        top: 0
+    })
+}
+
+
+portfolio.op
+
+portfolio.init()
